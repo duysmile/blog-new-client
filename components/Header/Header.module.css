@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: var(--spacing-base) var(--spacing-container);
+}
+
+.header {
+    box-shadow: var(--shadow-1);
+    border-color: var(--border-strong);
+    border-bottom-width: 1px;
+    border-style: solid;
+}
