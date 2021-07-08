@@ -57,27 +57,29 @@ export default function Login() {
     return (
         <Layout>
             <div className={styles.container}>
-                <Pane>
-                    <Formik<FormValues>
-                        initialValues={{ email: "", password: "" }}
-                        onSubmit={onSubmit}
-                        validate={validate}
-                        children={({
-                            isSubmitting: busy,
-                            handleSubmit,
-                        }) => (
-                            <form onSubmit={handleSubmit} className="w-80 flex flex-col gap-3.5">
-                                {email}
-                                {password}
-                                <SubmitButton
-                                    busy={busy}
-                                >
-                                    Sign in
-                                </SubmitButton>
-                            </form>
-                        )}
-                    />
-                </Pane>
+                <div className="mb-40">
+                    <Pane>
+                        <Formik<FormValues>
+                            initialValues={{ email: "", password: "" }}
+                            onSubmit={onSubmit}
+                            validate={validate}
+                            children={({
+                                isSubmitting: busy,
+                                handleSubmit,
+                            }) => (
+                                <form onSubmit={handleSubmit} className="w-80 flex flex-col gap-3.5">
+                                    {email}
+                                    {password}
+                                    <SubmitButton
+                                        busy={busy}
+                                    >
+                                        Sign in
+                                    </SubmitButton>
+                                </form>
+                            )}
+                        />
+                    </Pane>
+                </div>
             </div>
         </Layout>
     )

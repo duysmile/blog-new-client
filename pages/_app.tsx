@@ -1,9 +1,10 @@
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
 
-import 'tailwindcss/tailwind.css'
+import "tailwindcss/tailwind.css";
 import "@moai/core/dist/bundle.css";
 import "@moai/core/dist/font/remote.css";
-import { AppProps } from 'next/app'
+import "../styles/globals.css";
+import { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
@@ -15,5 +16,5 @@ export default function App({ Component, pageProps }: AppProps) {
         >
             <Component {...pageProps} />
         </ThemeProvider>
-    )
+    );
 }
