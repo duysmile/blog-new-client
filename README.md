@@ -1,1 +1,9 @@
-# blog-new-client
+# Tech development
+
+This site helps any team to improve technical skills
+
+### Site contains
+- Seminar voting
+- Tech blog
+- Tracking performance
+

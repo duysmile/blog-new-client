@@ -1,0 +1,10 @@
+.container {
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--content-width);
+    margin: var(--spacing-container) auto;
+}
