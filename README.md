@@ -6,4 +6,6 @@ This site helps any team to improve technical skills
 - Seminar voting
 - Tech blog
 - Tracking performance
+- Do exercises
+- Store documents
 
