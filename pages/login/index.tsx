@@ -8,7 +8,7 @@ import Layout from "../../components/Layout";
 import styles from "./Login.module.css";
 import SubmitButton from '../../components/SubmitButton';
 
-import ERRORS from "./errors";
+import ERRORS from "../../errors/login";
 
 type FormValues = {
     email: string;
